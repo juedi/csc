@@ -1,3 +1,17 @@
+### user
+user_id
+user_type(1-商户；2-管理员；0-超级管理员)
+phone
+password
+status
+username
+address
+realname
+create_time
+create_user
+update_time
+update_user
+
 1. 手机号密码登录，管理员人工审核认证。商家填写店铺地址，店主姓名
 2. 管理员重置密码，商家修改密码
 3. 商品列表->商品详情->模仿肯德基下单
