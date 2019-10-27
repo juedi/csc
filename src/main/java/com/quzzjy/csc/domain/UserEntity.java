@@ -1,9 +1,10 @@
-/**
- * 
- */
 package com.quzzjy.csc.domain;
 
+import java.util.Date;
+
 import com.baomidou.mybatisplus.annotation.TableName;
+
+import lombok.Data;
 
 /**
  * @typename UserEntity
@@ -14,42 +15,21 @@ import com.baomidou.mybatisplus.annotation.TableName;
  * @since 1.0.0
  */
 @TableName("csc_user")
+@Data
 public class UserEntity {
 	private Long userId;
 	private String name;
 	private String address;
 	private String status;
-
-	public Long getUserId() {
-		return userId;
-	}
-
-	public void setUserId(Long userId) {
-		this.userId = userId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
+	/**1-商户；2-管理员；0-超级管理员*/
+	private String userType;
+	
+	private String phone;
+	private String password;
+	private String realname;
+	private Date createTime;
+	private String createUser;
+	private Date updateTime;
+	private String updateUser;
 
 }
